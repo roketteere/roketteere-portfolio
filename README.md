@@ -1,6 +1,9 @@
 # Roketteere's Reactjs Portfolio
-
-![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg) (https://opensource.org/licenses/MIT)
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+![React Version](https://img.shields.io/badge/React-17.0.2-purple)
+![Node Version](https://img.shields.io/badge/Node-14.17.0-green)
+![NPM Version](https://img.shields.io/badge/NPM-6.14.13-yellowgreen)
+![Bootstrap Version](https://img.shields.io/badge/Bootstrap-5.0.1-blueviolet)
 
 ## Description
 
@@ -13,6 +16,7 @@ a contact form. It also contains a portfolio page with links to my projects.
 * [Usage](#usage)
 * [License](#license)
 * [Questions](#questions)
+* [Links](#links)
 
 ## Installation
 
@@ -32,10 +36,10 @@ npm start
 
 ## License
 
-This project is licensed under the MIT license.
+This project is licensed under the MIT license.(https://opensource.org/licenses/MIT)
 
 ## Questions
+jxp489@gmail.com
 
-
-
-![GitHub Profile Image: Roketteer](https://avatars.githubusercontent.com/u/59448302?v=4)
+## Links
+[GitHub Profile: Roketteere](https://github.com/roketteere)

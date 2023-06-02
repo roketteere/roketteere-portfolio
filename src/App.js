@@ -5,6 +5,7 @@ import Project from "./components/Project";
 import Resume from "./components/Resume";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/resume" element={<Resume />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
           {/* <Project /> */}
           <Footer />

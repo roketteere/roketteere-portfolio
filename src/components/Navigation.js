@@ -16,7 +16,7 @@ export default function Navigation() {
             </a>
           </li>
           <li>
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="/contact">
               <Mailbox /> Contact
             </a>
           </li>

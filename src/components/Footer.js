@@ -1,19 +1,29 @@
 import React from "react";
-import { Github } from "react-bootstrap-icons";
-
+import { Github, Linkedin } from "react-bootstrap-icons";
 
 export default function Footer() {
-  function go() {
-    document.location.replace("http://github.com/roketteere");
+  function goGithub() {
+    window.open("http://github.com/roketteere");
+  }
+
+  function goLinkedIn() {
+    window.open("https://www.linkedin.com/in/joel-perez-0aaa2a138");
   }
   return (
     <div>
       <button
         type="button"
-        className="btn btn-primary bi bi-github"
-        onClick={go}>
-        {"Github "}
+        className="btn btn-primary bi bi-github m-2"
+        onClick={goGithub}>
         <Github />
+        {" Github"}
+      </button>
+      <button
+        type="button"
+        className="btn btn-primary bi bi-linkedin m-2"
+        onClick={goLinkedIn}>
+        <Linkedin />
+        {" LinkedIn"}
       </button>
     </div>
   );

@@ -1,3 +1,5 @@
+/* Import bootstrap */
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.project-container {
+  background-color: #61dafb;
 }

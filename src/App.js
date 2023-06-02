@@ -1,16 +1,28 @@
 // import logo from "./logo.svg";
 import "./App.css";
-// import Home from "./components/Home";
+import Home from "./components/Home";
 import Project from "./components/Project";
+import Resume from "./components/Resume";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Navigation />
-      <Project />
-      <Footer />
+      <div className="App">
+        <BrowserRouter>
+          <div className="head">
+            <Navigation />
+          </div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/resume" element={<Resume />} />
+          </Routes>
+          {/* <Project /> */}
+          <Footer />
+        </BrowserRouter>
+      </div>
     </>
   );
 }

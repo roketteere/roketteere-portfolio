@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/roketteere-portfolio/static/css/main.fb6be3c5.css",
-    "main.js": "/roketteere-portfolio/static/js/main.e00ae8cd.js",
+    "main.js": "/roketteere-portfolio/static/js/main.bb1a0a27.js",
     "index.html": "/roketteere-portfolio/index.html",
     "main.fb6be3c5.css.map": "/roketteere-portfolio/static/css/main.fb6be3c5.css.map",
-    "main.e00ae8cd.js.map": "/roketteere-portfolio/static/js/main.e00ae8cd.js.map"
+    "main.bb1a0a27.js.map": "/roketteere-portfolio/static/js/main.bb1a0a27.js.map"
   },
   "entrypoints": [
     "static/css/main.fb6be3c5.css",
-    "static/js/main.e00ae8cd.js"
+    "static/js/main.bb1a0a27.js"
   ]
 }

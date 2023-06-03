@@ -10,7 +10,7 @@ export default function Footer() {
     window.open("https://www.linkedin.com/in/joel-perez-0aaa2a138");
   }
   return (
-    <div>
+    <div className="position-fixed bottom-0">
       <button
         type="button"
         className="btn btn-primary bi bi-github m-2"

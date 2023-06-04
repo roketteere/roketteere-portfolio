@@ -17,9 +17,9 @@ function App() {
             <Navigation />
           </div>
           <Routes>
-            <Route path="/" element={Home} />
-            <Route path="/" element={Resume} />
-            <Route path="/" element={Contact} />
+            <Route path="roketteere-portfolio/" element={Home} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
           <Project />
           <Footer />

@@ -35,12 +35,12 @@ export default function Navigation() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="roketteere-profile/resume">
+              <a className="nav-link" href="resume/">
                 <Paperclip /> Resume
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="roketteere-profile/contact">
+              <a className="nav-link" href="contact/">
                 <Mailbox /> Contact
               </a>
             </li>

@@ -30,7 +30,7 @@ export default function Navigation() {
           id="navbarText">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link \" href="/roketteere-portfolio/">
+              <a className="nav-link \" href="/roketteere-portfolio">
                 <House /> Home
               </a>
             </li>

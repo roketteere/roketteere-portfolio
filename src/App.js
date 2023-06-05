@@ -1,7 +1,7 @@
 // import logo from "./logo.svg";
 import "./App.css";
 import Home from "./components/Home";
-import Project from "./components/Project";
+
 import Resume from "./components/Resume";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
@@ -13,15 +13,15 @@ function App() {
     <>
       <div className="App">
         <BrowserRouter>
-          <div className="container-md">
+          <div className="container-md mb-1">
             <Navigation />
           </div>
+         
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
-          <Project />
           <Footer />
         </BrowserRouter>
       </div>

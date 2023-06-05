@@ -1,5 +1,6 @@
 import { House, Paperclip, Mailbox } from "react-bootstrap-icons";
 import { useState } from "react";
+import { HandThumbsUp } from "react-bootstrap-icons";
 
 export default function Navigation() {
   const [isCollapsed, setIsCollapsed] = useState(true);
@@ -12,7 +13,7 @@ export default function Navigation() {
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
-          Joel Perez | Full Stack Developer
+          <HandThumbsUp /> Joel Perez | Full Stack Developer
         </a>
         <button
           className="navbar-toggler"

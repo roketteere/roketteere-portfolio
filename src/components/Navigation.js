@@ -46,7 +46,7 @@ export default function Navigation() {
               </a>
             </li>
           </ul>
-          <span className="navbar-text">Joel Perez | Full Stack Developer</span>
+          <span className="navbar-text fs-3 fw-1">Welcome!</span>
         </div>
       </div>
     </nav>

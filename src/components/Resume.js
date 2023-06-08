@@ -1,12 +1,12 @@
-import React from "react";
 import { useState } from "react";
 import { ArrowsCollapse } from "react-bootstrap-icons";
+const downloadResume = "../download/joel_perez_resume.pdf";
 
 // breaking down my resume into react components to make it easier to
 // read and maintain
 const ContactInfo = () => (
-  <div className="border border-primary-subtle rounded card-body m-2">
-    <h3 className="card-title bg-primary rounded p-2 text-white">Contact</h3>
+  <div className="border border-light rounded card-body m-2 bg-dark text-light">
+    <h3 className="card-title bg-dark rounded p-2 text-white">Contact</h3>
     <p className="card-text">
       <span className="fw-bold">Name: </span> JOEL PEREZ
     </p>
@@ -24,11 +24,14 @@ const ContactInfo = () => (
 );
 
 const Objective = () => (
-  <div className="border border-primary-subtle rounded card-body m-2">
-    <h3 className="card-title bg-primary rounded p-2 text-white">Objective</h3>
+  <div className="border border-light rounded card-body m-2 bg-dark text-light">
+    <h3 className="card-title bg-dark rounded p-2 text-white">Objective</h3>
     <p className="card-text">
-      Entry-level software developer that is creative, eager to learn, and great
-      with communication...
+      To obtain a position as a full stack developer where I can utilize my
+      skills and experience to help your company grow. I am both self-taught and
+      a bootcamp graduate. I am a very hard working person and I am always
+      looking for new opportunities. I am a fast learner and I am always looking
+      to learn new things.
     </p>
   </div>
 );
@@ -40,14 +43,17 @@ const Skills = () => {
     setIsCollapsed(!isCollapsed);
   };
   return (
-    <div className="border border-primary-subtle rounded card-body m-2">
+    <div className="border border-light rounded card-body m-2 bg-dark text-light">
       <h3
-        className="card-title bg-primary rounded p-2 text-white"
+        className="card-title bg-dark rounded p-2 text-white"
         onClick={toggleCollapse}
         style={{ cursor: "pointer" }}>
-        <ArrowsCollapse /> Skills
+        <ArrowsCollapse /> Proficiencies
       </h3>
-      <ul className={`list-group ${isCollapsed ? "collapse" : ""}`}>
+      <ul
+        className={`list-group bg-dark text-light ${
+          isCollapsed ? "collapse" : ""
+        }`}>
         <li className="list-group-item">Javascript</li>
         <li className="list-group-item">Python</li>
         <li className="list-group-item">Reactjs</li>
@@ -73,29 +79,94 @@ const Skills = () => {
 };
 
 const Experience = () => (
-  <div className="border border-primary-subtle rounded card-body m-2">
-    <h3 className="card-title bg-primary rounded p-2 text-white">
-      Experience/Accomplishments
-    </h3>
+  <div className="border border-light rounded card-body m-2 bg-dark text-light">
+    <h3 className="card-title bg-dark rounded p-2 text-white">Experience</h3>
 
     <h4 className="card-text">
-      Reprovisioned CDMA Cellular Phones (2008-2012)
+      <span className="fw-bold">Full Stack Developer</span>
+      <br />
+      <span className="fw-light">Dev Ops</span>
     </h4>
-    <p className="card-text">
-      HEX Editing – able to overwrite system memory addresses...
-    </p>
+    <p className="card-text">Database</p>
   </div>
 );
 
 const Education = () => (
-  <div className="border border-primary-subtle rounded card-body m-2">
-    <h3 className="card-title bg-primary rounded p-2 text-white">Education</h3>
+  <div className="border border-light rounded card-body m-2 bg-dark text-light">
+    <h3 className="card-title bg-dark rounded p-2 text-white">Education</h3>
     <p className="card-text">University of Washing Coding Bootcamp (2023)</p>
+    <p className="card-text">
+      MERN Fullstack - MongoDB, Express, React, Nodejs
+    </p>
+  </div>
+);
+
+const Badges = () => (
+  <div>
+    <p className="lead">
+      <img
+        className="m-2"
+        src="https://img.shields.io/badge/MongoDB-Database-brown"
+        alt="MongoDB"
+      />
+      <img
+        className="m-2"
+        src="https://img.shields.io/badge/Express-Routing-red"
+        alt="Express"
+      />
+      <img
+        className="m-2"
+        src="https://img.shields.io/badge/React-FrontEnd-purple"
+        alt="React"
+      />
+      <img
+        className="m-2"
+        src="https://img.shields.io/badge/Nodejs-Server-green"
+        alt="Nodejs"
+      />
+      <img
+        className="m-2"
+        src="https://img.shields.io/badge/Language-Javascript-yellow"
+        alt="JS"
+      />
+      <img
+        className="m-2"
+        src="https://img.shields.io/badge/Scripting-HTML-orange"
+        alt="HTML"
+      />
+      <img
+        className="m-2"
+        src="https://img.shields.io/badge/Styling-CSS-blue"
+        alt="CSS"
+      />
+      <img
+        className="m-2"
+        src="https://img.shields.io/badge/Framework-Bootstrap-purple"
+        alt="Bootstrap"
+      />
+      <img
+        className="m-2"
+        src="https://img.shields.io/badge/Package-React_Bootstrap-blue"
+        alt="React Bootstrap"
+      />
+      <img
+        className="m-2"
+        src="https://img.shields.io/badge/Package-React_Icons-green"
+        alt="React Icons"
+      />
+    </p>
   </div>
 );
 
 const Resume = () => (
-  <div className="card ">
+  <div className="card bg-dark text-light">
+    <Badges />
+    <a
+      className="d-flex align-items-center justify-content-center align-self-center btn-bi m-2 nav-link border border-light rounded p-2 w-25"
+      href={downloadResume}
+      download>
+      Download Resume
+    </a>
     <ContactInfo />
     <Objective />
     <Skills />

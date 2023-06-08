@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Linkedin } from "react-bootstrap-icons";
+import { Github, Linkedin, StackOverflow } from "react-bootstrap-icons";
 
 export default function Footer() {
   function goGithub() {
@@ -15,7 +15,7 @@ export default function Footer() {
         type="button"
         className="btn btn-primary bi bi-github m-2"
         onClick={goGithub}>
-        <Github />
+        <Github className="bg-dark" />
         {" Github"}
       </button>
       <button
@@ -24,6 +24,13 @@ export default function Footer() {
         onClick={goLinkedIn}>
         <Linkedin />
         {" LinkedIn"}
+      </button>
+      <button
+        type="button"
+        className="btn btn-primary bi bi-linkedin m-2"
+        onClick={goLinkedIn}>
+        <StackOverflow className="bg-warning" />
+        {" StackOverflow"}
       </button>
     </div>
   );

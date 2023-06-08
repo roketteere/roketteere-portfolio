@@ -1,7 +1,10 @@
 /* Import bootstrap */
-
+html {
+  background-color: #8f4d7e;
+}
 .App {
   text-align: center;
+  background-color: #8f4d7e;
 }
 
 .App-logo {
@@ -41,4 +44,13 @@
 
 .project-container {
   background-color: #61dafb;
+}
+
+.card-title {
+  background-color: #282c34;
+  color: white;
+}
+
+#root {
+  background-color: #8f4d7e;
 }

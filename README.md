@@ -11,6 +11,11 @@
 This is my portfolio built with Reactjs. It contains a short bio, my resume, and
 a contact form. It also contains a portfolio page with links to my projects.
 
+## Screenshot
+<img width="1495" alt="Screenshot 2023-06-08 at 3 43 44 PM" src="https://github.com/roketteere/roketteere-portfolio/assets/1593262/a211e27f-36d3-448a-b16b-1cfb1bfd5cca">
+
+
+
 ## Deployed Application
 
 (Deployed Application)[https://roketteere-portfolio.netlify.app/]
